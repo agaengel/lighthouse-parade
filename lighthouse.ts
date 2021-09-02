@@ -38,7 +38,6 @@ export const runLighthouseReport = (url: string, maxConcurrency?: number) => {
       '--output=csv',
       '--output-path=stdout',
       '--emulated-form-factor=mobile',
-      '--only-categories=performance',
       '--chrome-flags="--headless"',
       '--max-wait-for-load=45000',
     ]);
