@@ -30,6 +30,13 @@ Ex: `npx lighthouse-parade http://www.dfwfreeways.com/`
 
 Runs a crawler on the provided URL. Discovers all URLs and runs a lighthouse report on each HTML page, then writes them to a CSV file located in `./lighthouse-parade-data/<timestamp>/urls.csv`. The individual reports are written to `./lighthouse-parade-data/<timestamp>/reports/`. At the end, each report file is bundled into one aggregated report CSV with each row representing a URL and each column is a metric.
 
+## build locally and run
+```
+npm ci
+npm run bild
+dist/cli.js <url> [dataDirectory] [options]
+```
+
 ### Options
 
 ```
